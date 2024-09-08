@@ -1,0 +1,145 @@
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Lobster', cursive; /* Define a fonte do título */
+}
+
+/* .navbar-brand img {
+    height: 200px;
+} */
+
+/* Estilo padrão para a navbar em telas maiores */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+/* Estilo para a logo na navbar */
+.navbar-brand {
+    flex: 1; /* Faz com que a logo ocupe o espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza a logo horizontalmente */
+}
+
+/* Estilo para a navbar em telas menores */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        text-align: center; /* Centraliza o conteúdo da navbar */
+    }
+
+    .navbar-brand {
+        margin-bottom: 1rem; /* Espaço entre a logo e o conteúdo abaixo (ajuste conforme necessário) */
+    }
+}
+
+/* Estilo para garantir que o texto seja legível */
+main {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade para melhorar a legibilidade */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Estilo dos ícones */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: black; /* Cor preta inicial dos ícones */
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Muda a cor ao passar o mouse */
+.social-link:hover {
+    color: #ff5722; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilo de cada página */
+
+/* Página Bolo de Laranja */
+
+.bolo-index {
+    background-image: url('../images/fundo-receitas02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bolo-laranja {
+    background-image: url('../images/bolo-delicioso-com-arranjo-de-laranjas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Página Bolo de Chocololate  */
+.bolo-chocolate {
+    background-image: url('../images/imagem-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Página Bolo de Cenoura */
+.bolo-cenoura {
+    background-image: url('../images/bolo-cenoura.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Página Bolo de Fubá */
+.bolo-fuba {
+    background-image: url('../images/c382767c-3532-4937-9d6f-da624c7a660c.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Página Bolo de Coco */
+.bolo-coco {
+    background-image: url('../images/PRIDIA0418111240-1024x683.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 125px; /* Tamanho da logo em telas pequenas */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Para telas médias (tablets, etc.) */
+@media (min-width: 768px) {
+    .logo {
+        width: 200px; /* Aumenta o tamanho da logo em telas médias */
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1200px) {
+    .logo {
+        width: 250px; /* Aumenta ainda mais em telas grandes */
+    }
+}
